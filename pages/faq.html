@@ -6,45 +6,50 @@
     <title>Tailwind Labs - FAQ</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
-          <a href="../index.html">Inicio</a>
-          <a href="./about.html">Sobre el curso</a>
-          <a class="is-active" href="./faq.html">FAQ</a>
-          <a href="./privacy.html">Privacidad</a>
+
+  <body class="min-h-screen flex flex-col bg-slate-100 text-slate-800">
+    <header class="bg-slate-900 border-b border-slate-700">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 p-4">
+        <a class="text-cyan-300 font-bold text-xl" href="../index.html">Tailwind Labs</a>
+
+        <nav class="flex flex-wrap gap-4">
+          <a class="text-slate-200 hover:text-cyan-300 transition" href="../index.html">Inicio</a>
+          <a class="text-slate-200 hover:text-cyan-300 transition" href="./about.html">Sobre el curso</a>
+          <a class="text-cyan-300 transition" href="./faq.html">FAQ</a>
+          <a class="text-slate-200 hover:text-cyan-300 transition" href="./privacy.html">Privacidad</a>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="faq-shell">
-          <div class="faq-head">
-            <h1>Preguntas frecuentes</h1>
-            <p>
-            Practica utilidades de espaciado, borde, color, tipografia y estados hover/focus.
+    <main class="flex-1">
+      <section class="max-w-6xl mx-auto px-4 py-10">
+        <div class="bg-white border border-slate-300 rounded-xl shadow overflow-hidden">
+          <div class="p-6 border-b border-slate-300">
+            <h1 class="text-3xl font-bold text-slate-900">Preguntas frecuentes</h1>
+
+            <p class="mt-3 text-slate-600">
+              Practica utilidades de espaciado, borde, color, tipografia y estados hover/focus.
             </p>
           </div>
 
-          <div id="faq-list" class="faq-list">
-            <article class="faq-item">
-              <h2>¿Debo usar CSS personalizado?</h2>
-              <p>
+          <div id="faq-list" class="divide-y divide-slate-300">
+            <article class="p-6 hover:bg-slate-50 transition">
+              <h2 class="text-xl font-bold text-slate-900">¿Debo usar CSS personalizado?</h2>
+              <p class="mt-3 text-slate-600">
                 En la entrega final no. Debes traducir los estilos de esta base a utilidades de Tailwind.
               </p>
             </article>
-            <article class="faq-item">
-              <h2>¿Que evaluan los tests automaticos?</h2>
-              <p>
+
+            <article class="p-6 hover:bg-slate-50 transition">
+              <h2 class="text-xl font-bold text-slate-900">¿Que evaluan los tests automaticos?</h2>
+              <p class="mt-3 text-slate-600">
                 Estructura, presencia de Tailwind, eliminacion del enlace CSS y utilidades clave.
               </p>
             </article>
-            <article class="faq-item">
-              <h2>¿La correccion docente sigue existiendo?</h2>
-              <p>
+
+            <article class="p-6 hover:bg-slate-50 transition">
+              <h2 class="text-xl font-bold text-slate-900">¿La correccion docente sigue existiendo?</h2>
+              <p class="mt-3 text-slate-600">
                 Si. El docente valida calidad visual, coherencia y buenas practicas.
               </p>
             </article>
@@ -53,10 +58,9 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
+    <footer class="bg-white border-t border-slate-300 py-4">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-2 text-slate-600">
         <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
       </div>
     </footer>
   </body>
